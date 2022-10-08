@@ -381,7 +381,7 @@ class Trx(object):
         )
 
     def freeze_balance(
-        self, owner: TAddress, amount: int, resource: str = "ENERGY", *, receiver: TAddress = None
+        self, owner: TAddress, amount: int, resource: str, receiver: TAddress = None
     ) -> "TransactionBuilder":
         """Freeze balance to get energy or bandwidth, for 3 days.
 
